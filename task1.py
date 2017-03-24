@@ -1,3 +1,5 @@
+import random
+
 def application_layer(msg):
 	msg_in_bits = ""
 	for c in msg:
@@ -10,12 +12,22 @@ def application_layer(msg):
 	presentation_layer(msg_in_bits)
 	return
 def presentation_layer(msg):
-	msg = "1" + msg
+	# choose a protocol (telnet)
+	pres_header = ""
+	# generate a random 32-bit header
+	for i in range(0, 32):
+		pres_header += str(random.choice([0,1]))
+	msg = pres_header + msg
 	print msg
 	session_layer(msg)
 	return
 def session_layer(msg):
-	msg = "1" + msg
+	# choose a protocol (rpc)
+	sesh_header = ""
+	# generate a random 32-bit header
+	for i in range(0, 32):
+		sesh_header += str(random.choice([0,1]))
+	msg = sesh_header + msg
 	print msg
 	transport_layer(msg)
 	return
