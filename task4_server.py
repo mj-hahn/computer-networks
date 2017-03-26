@@ -5,6 +5,7 @@ serversocket.bind(('localhost', 8089))
 serversocket.listen(5) # become a server socket, maximum 5 connections
 
 connected = False
+file_sent = False
 
 # listen for hello
 while True:
@@ -29,5 +30,9 @@ while True:
 			file_contents = file.read()
 			connection.send(file_contents)
 			print 'D: file sent to client'
+			file_sent = True
 			file.close()
-			break
+	buf = connection.recv(64)
+	if connected == True and file_sent == True and buf == 'ack':
+		print 'E: ack received'
+		break
