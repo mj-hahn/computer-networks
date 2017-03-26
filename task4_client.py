@@ -28,4 +28,6 @@ while True:
 			file.write(file_contents)
 			file.close()
 			print 'D: file saved in destination folder'
+			print 'E: sending ack back to server'
+			clientsocket.send('ack')
 			break
