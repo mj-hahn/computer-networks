@@ -45,6 +45,7 @@ def datalink_layer(msg):
 	return
 def physical_layer(msg):
 	print msg
+	print "size: ", len(msg)
 	return
 
 def main(message):
