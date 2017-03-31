@@ -71,12 +71,14 @@ def dijkstra(g, start, destination):
 				current = current_node.get_distance(next_node)
 				bestNodeSoFar = next_node
 		#set new current node
+		total += current_node.get_distance(bestNodeSoFar)
 		current_node = bestNodeSoFar
 		current = float('inf') # reset the current distance for a new node
 		
 		#break out of loop if shortest path is found
 		if (current_node == destination_node):
 			print '(final node is = %s)' %(current_node.get_name())
+			print 'total distance to node is: %s' %(total)
 			best_path[current_node.get_name()] = current_node.get_name()
 			break
 		
