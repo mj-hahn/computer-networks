@@ -12,6 +12,7 @@ Task 1 is organized as a separate function for each layer of the OSI model. A us
 
 <hr>
 ### Task 3
+`python task3.py`
 
 Task 3 implements a undirected graph in python to act as network. There are six nodes in the current implementation with each connection being and edge with an associated delay. Nodes are labeled A, B, C, D, E, F and each delay for each node connection was abitrarily chosen. In the main function of the python program the graph is instantiated and a undirected graph is created (see below). Dijkstra's algorithm was created and called in main using dijkstra(g, 'a', 'e'), where 'a' is the starting node and 'e' is the destination node. An output of the of Dijksta's algorithm being used on the graph is shown below.
 
