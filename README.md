@@ -25,4 +25,7 @@ Task 4 comprises of two programs: the server and the client. When the server is 
 * C: The client sends a requested filename / the server listens for a filename.
 * D: The server sends the file (from the source folder) to the client / the client receives the file and saves it (in the destination folder).
 * E: The client sends an ACK / the server listens for an ACK. Both programs terminate.
+
+The programs consider both UDP and TCP.
+
 ![task4_image](https://github.com/MHahn37/cachemoney/blob/master/readme%20source%20images/Screen%20Shot%202017-03-31%20at%207.02.43%20PM.png)
