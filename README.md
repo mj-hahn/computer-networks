@@ -8,9 +8,11 @@ Task 1 is organized as a separate function for each layer of the OSI model. A us
 
 ![task1 image](https://github.com/MHahn37/cachemoney/blob/master/readme%20source%20images/Screen%20Shot%202017-03-31%20at%206.59.10%20PM.png)
 <hr>
+
 ### Task 2
 
 <hr>
+
 ### Task 3
 `python task3.py`
 
@@ -19,6 +21,7 @@ Task 3 implements a undirected graph in python to act as network. There are six 
 ![task3 image](https://github.com/MHahn37/cachemoney/blob/master/readme%20source%20images/373%20graph.png)
 ![task3 image](https://github.com/MHahn37/cachemoney/blob/master/readme%20source%20images/Screen%20Shot%202017-03-31%20at%207.35.48%20PM.png)
 <hr>
+
 ### Task 4
 `python task4_server.py` `python task4_client.py`
 
