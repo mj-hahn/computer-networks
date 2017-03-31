@@ -59,7 +59,7 @@ def dijkstra(g, start, destination):
 	current_node = g.get_vertex(start)
 	destination_node = g.get_vertex(destination)
 
-
+	print '\n(starting node is = %s)\n' %(current_node.get_name())
 	while True:
 		print '(current node is = %s)' %(current_node)
 		for next_node in current_node.get_connections():
@@ -74,14 +74,14 @@ def dijkstra(g, start, destination):
 		total += current_node.get_distance(bestNodeSoFar)
 		current_node = bestNodeSoFar
 		current = float('inf') # reset the current distance for a new node
-		
+
 		#break out of loop if shortest path is found
 		if (current_node == destination_node):
-			print '(final node is = %s)' %(current_node.get_name())
-			print 'total distance to node is: %s' %(total)
+			print '\n(final node is = %s)' %(current_node.get_name())
+			print 'total distance from %s to %s is: %s\n' %(start, destination, total)
 			best_path[current_node.get_name()] = current_node.get_name()
 			break
-		
+
 if __name__ == '__main__':
 
     g = Graph()
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     g.add_vertex('e')
     g.add_vertex('f')
 
-    g.add_edge('a', 'b', 7)  
+    g.add_edge('a', 'b', 10)
     g.add_edge('a', 'c', 9)
     g.add_edge('a', 'f', 14)
     g.add_edge('b', 'c', 10)
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     g.add_edge('d', 'e', 6)
     g.add_edge('e', 'f', 9)
 
-    dijkstra(g, 'a', 'f')
+    dijkstra(g, 'a', 'e')
 
     #for v in g:
      #   for w in v.get_connections():
