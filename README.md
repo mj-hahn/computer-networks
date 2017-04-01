@@ -30,15 +30,16 @@ We implemented the checksum algorithm with a python script. The main program in 
 `
 
 The checksum is computed in the getCheckSum(message) function by the following process:
+`
 1)
 		compute the decimal sum of each word in the bit stream
 		e.g. 2 words, 1100 and 1010
 			 sum = 12 + 10 = 22
 2) 
 		determine the modulo value.
-		moduloValue = 2^(# bits per word) - 1
-		In the example above, moduloValue = 15, because the message
-		consisted of two 4 bit words, and 2^4 - 1 = 15. 
+	        moduloValue = 2^(# bits per word) - 1
+                In the example above, moduloValue = 15, because the message
+                consisted of two 4 bit words, and 2^4 - 1 = 15. 
 	
 3)
 		compute X, where
@@ -51,15 +52,14 @@ The checksum is computed in the getCheckSum(message) function by the following p
 5)
 		compute:
 			bL modulo (moduloValue)
-
+`
 Once the checksum is computed, the verifier(message, checkSum) message checks to see if the message is error free by computing 
 result  = (sum + bL) % moduloValue
 
 If the result is 0, then no error occurred. Otherwise, an error is detected. 
 
 Running the program results in the following output.
-
-
+![task2 image](https://github.com/MHahn37/cachemoney/blob/master/readme%20source%20images/Task2.JPG)
 
 
 <hr>
