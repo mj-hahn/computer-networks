@@ -75,7 +75,7 @@ Task 3 implements a undirected graph in python to act as network. There are six 
 ```python
 dijkstra(g, 'a', 'e')
 ```
-where 'a' is the starting node and 'e' is the destination node. An output of the of Dijksta's algorithm being used on the graph is shown below.
+where g is the input graph, 'a' is the starting node, and 'e' is the destination node. An output of the of Dijksta's algorithm being used on the graph is shown below.
 
 ![task3 image](https://github.com/MHahn37/cachemoney/blob/master/readme%20source%20images/373%20graph.png)
 ![task3 image](https://github.com/MHahn37/cachemoney/blob/master/readme%20source%20images/Screen%20Shot%202017-03-31%20at%207.35.48%20PM.png)
