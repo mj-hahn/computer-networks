@@ -1,5 +1,5 @@
 ## ELEC 373 Computer Networks - Course Project Final Report
-Kevin Huang 10104718 - Matt Hahn  10104772 - Noam Hacker 10106436
+Kevin Huang - Matt Hahn - Noam Hacker
 
 ### Task 1
 `python task1.py`
